@@ -88,17 +88,17 @@ Control-M Workbench image is built in a pipeline which performs automatic tests 
 
 - There is enough free memory for the container: Control-M Workbench requires a container with at least 8GB of memory, please note that this refers to the container and not the host machine. A machine with 8GB of memory may prove insufficient to run the container properly.
 
-- Ports are free and communication is not blocked by firewall: The essentail port to communicate with Control-M Workbench is 8443.
+- Ports are free and communication is not blocked by firewall
 
 - Note on Windows: Runing on Windows is possible with [WSL](https://docs.docker.com/desktop/windows/wsl/). For Docker Desktop users: Please make sure you are allocating enough memory to the container.
 
 Control-M Workbench is meant to be used as an ephemeral environment. Although is possible to leave it on for long period of time, this is not the goal of workbench and troubleshooting often requires restarting the container. 
 
-Note that there is no persistance of jobs and other definitions. We work according to the Job as Code approach. All the jobs and other definitions should be saved as code. 
+Note that there is no persistance of jobs and other definitions. We work according to the Job as Code approach. All the jobs and other definitions should be saved as code outside of the Control-M Workbench container. 
 
 If you are experiencing any issues using Control-M Workbench after having done the troubleshooting described as above, open an [issue](https://github.com/controlm/workbench/issues).
 
-For Control-M customers: Please note that Control-M Workbench is not meant to be used in a production environemnt, and should be strictly limited as a development tool. If you are experiencing an issue and deems necessary, please contact our support team.
+For Control-M customers: Please note that Control-M Workbench is not meant to be used in a production environemnt and should be strictly limited as a development tool. If you are experiencing an issue and deem necessary, please contact our support team.
 
 ## License
 
