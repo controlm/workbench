@@ -98,8 +98,6 @@ Note that there is no persistance of jobs and other definitions. We work accordi
 
 If you are experiencing any issues using Control-M Workbench after having done the troubleshooting described as above, open an [issue](https://github.com/controlm/workbench/issues).
 
-For Control-M customers: Please note that Control-M Workbench is not meant to be used in a production environemnt and should be strictly limited as a development tool. If you are experiencing an issue and deem necessary, please contact our support team.
-
 ## License
 
 Please read the [Control-M Workbench License](https://aapi-swagger-doc.s3.us-west-2.amazonaws.com/workbench-license/Control-M+Workbench+Terms+of+Use+v.07.20.2022.pdf) before pulling and using the docker image
