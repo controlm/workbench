@@ -1,0 +1,23 @@
+{
+    "TestFolderAutomationAPI": {
+        "Type": "Folder",
+        "RunAs": "workbench",
+
+        "StartJob": {
+            "Type": "Job:Command",
+            "Command": "echo \"Hello\"",
+            "RunAs": "workbench"
+        },
+
+        "EndJob": {
+            "Type": "Job:Command",
+            "Command": "echo \"Bye\"",
+            "RunAs": "workbench"
+        },
+
+        "Flow": {
+            "Type": "Flow",
+            "Sequence": ["StartJob", "EndJob"]
+        }
+    }
+}
