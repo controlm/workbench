@@ -65,7 +65,7 @@ ctm environment set workbench
 ctm run quickstart.json -i
 ```
 
-You can check the tutorials of Automation API [here](https://docs.bmc.com/docs/automation-api/monthly/tutorials-1104087053.html)
+You can check the tutorials of Automation API [here](https://docs.bmc.com/docs/ctmapimonthly/tutorials-1116950277.html)
 
 ## Using Control-M Workbench with Control-M Python Client
 
