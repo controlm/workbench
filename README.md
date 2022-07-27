@@ -54,7 +54,7 @@ docker run \
 
 ## Using Control-M Workbench with Automation API
 
-Control-M Workbench can be a handy tool to test jobs written in JSON using [Automation API](https://controlm.github.io). You can either use the Automation API via curl, postman or any other REST client or use the Automation API cli. To define a workbench environment in the cli simply run the command:
+Control-M Workbench can be a handy tool to test jobs written in JSON using [Automation API](https://docs.bmc.com/docs/ctmapimonthly/control-m-automation-api-home-1116950269.html). You can either use the Automation API via curl, postman or any other REST client or use the Automation API cli. To define a workbench environment in the cli simply run the command:
 ```
 ctm environment workbench::add
 ```
