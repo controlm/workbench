@@ -1,6 +1,6 @@
 # Control-M Workbench Quickstart Guide
 
-Control-M is a no-cost, self-service, standalone development environment that is launched in minutes, giving you the autonomy to code, debug, and test jobs in JSON or Python.
+Control-M Workbench is a no-cost, self-service, standalone development environment that is launched in minutes, giving you the autonomy to code, debug, and test jobs in JSON or Python.
 
 Control-M Workbench is published as [docker image](https://hub.docker.com/repository/docker/controlm/workbench). 
 
