@@ -18,10 +18,7 @@ This repository contains examples of usages, a quickstart guide, and snippets yo
 
 To start a container run the docker command:
 ```
-docker run -dt \
-    -p 8443:8443 \
-    --hostname=workbench \
-    controlm/workbench:latest
+docker run -dt -p 8443:8443 --hostname=workbench controlm/workbench:latest
 ```
 
 
