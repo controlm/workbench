@@ -21,6 +21,11 @@ To start a container run the docker command:
 docker run -dt -p 8443:8443 --hostname=workbench controlm/workbench:latest
 ```
 
+In case you want to explicitly limit the consupmption of memory and cpu on the host it is recommended to run (adjust memory and cpu parameters according to the limits you wish to set):
+```
+docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench controlm/workbench:latest
+```
+
 
 ### Using with external agents
 
