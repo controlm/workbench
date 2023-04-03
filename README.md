@@ -74,7 +74,7 @@ From Control-M Workbench version 9.21.100, you can use the Control-M Automation 
 
 To deploy with the Control-M Automation API CLI use the following command:
 ```
-ctm deploy yourfile.ctmai workbench workbench
+ctm deploy jobtype yourfile.ctmai workbench workbench
 ```
 ### Importing definitions in Control-M Workbench (version 9.21.100 and above)
 From Control-M Workbench version 9.21.100, the `workbench::import` api was introduced to allow import of a zip file that contains definitions files into the workbench container. The definitions files can contain jobs, connection profiles, calendars, site standards (.json files) and Application Integrator plugins (.ctmai files).
