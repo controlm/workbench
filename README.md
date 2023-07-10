@@ -137,4 +137,4 @@ If you are experiencing any issues using Control-M Workbench after having perfor
 
 ## License
 
-Please read the [Control-M Workbench License](https://aapi-swagger-doc.s3.us-west-2.amazonaws.com/workbench-license/Control-M+Workbench+Terms+of+Use+v.07.20.2022.pdf) before pulling and using the docker image
+Please read the [Control-M Workbench License](https://aapi-swagger-doc.s3.us-west-2.amazonaws.com/workbench-license/Control-M+Workbench+Terms+of+Use+v07.06.2023+final.pdf) before pulling and using the docker image
