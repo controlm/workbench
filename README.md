@@ -132,6 +132,10 @@ Control-M Workbench is meant to be used as an ephemeral environment. Although is
 
 Note that there is no persistence of jobs and other definitions. We work according to the Job-as-Code approach. All the jobs and other definitions should be saved as code outside of the Control-M Workbench container. 
 
+Currently, the Change Password option <b>must not be used</b>.
+If you change the password and lose access to the Workbench Web interface, re-upload the image to regain access to the Workbench.
+regain access to the Workbench. The default password is restored.
+
 If you are experiencing any issues using Control-M Workbench after having performed the troubleshooting described as above, open an [issue](https://github.com/controlm/workbench/issues).
 
 
