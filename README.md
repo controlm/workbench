@@ -40,7 +40,7 @@ docker pull containers.bmc.com/bmc/workbench:9.21.210-GA
 
 To start a container, run the following docker command:
 ```
-docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench controlm/workbench:latest
+docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench containers.bmc.com/bmc/workbench:9.21.210-GA
 ```
 We recommend explicitly limiting the consumption of memory and CPU on the host. It's recommended to run (adjust memory and CPU parameters according to the limits you wish to set)
 
