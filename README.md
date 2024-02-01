@@ -4,7 +4,7 @@ Control-M Workbench is a no-cost, self-service, standalone development environme
 
 
 ## Getting started with Control-M Workbench
-In order to get workbench you will need premissions to download Control-M/Enterprise Manager from EPD. 
+In order to get workbench you will need permissions to download Control-M/Enterprise Manager from EPD. 
 
 ### Prerequisites
 
@@ -30,9 +30,9 @@ docker login containers.bmc.com -u<MyUser>
 1.	Ensure that you are logged in to containers.bmc.com
 2. Run:
 ```
-docker pull containers.bmc.com/bmc/workbench:9.21.210-GA
+docker pull containers.bmc.com/bmc/workbench:9.21.220-GA
 ```
-- Note: 9.21.210-GA is the tag for the version of the image. </br>To get the latest Workbench version, modify this to the latest version of Automation API. </br>You can find the latest Automation API version here: <a target="_blank" href="https://documents.bmc.com/supportu/API/Monthly/en-US/Documentation/API_Intro.htm">Automation API</a>
+- Note: 9.21.220-GA is the tag for the version of the image. </br>To get the latest Workbench version, modify this to the latest version of Automation API. </br>You can find the latest Automation API version here: <a target="_blank" href="https://documents.bmc.com/supportu/API/Monthly/en-US/Documentation/API_Intro.htm">Automation API</a>
 
 
 ### Get the Workbench image
@@ -40,7 +40,7 @@ docker pull containers.bmc.com/bmc/workbench:9.21.210-GA
 
 To start a container, run the following docker command:
 ```
-docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench containers.bmc.com/bmc/workbench:9.21.210-GA
+docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench containers.bmc.com/bmc/workbench:9.21.220-GA
 ```
 We recommend explicitly limiting the consumption of memory and CPU on the host. It's recommended to run (adjust memory and CPU parameters according to the limits you wish to set)
 
@@ -99,7 +99,7 @@ Before you begin use the following steps, as described in [Setting up the prereq
         {
           "username": "workbench",
           "token": "E14A4F8E45406977B31A1B091E5E04237...",
-          "version": "9.21.100"
+          "version": "9.21.220"
         }
         ```
 
