@@ -22,7 +22,9 @@ In order to get workbench you will need permissions to download Control-M/Enterp
 1.	Ensure that you have docker installed and running.
 2. With the user that has permissions to the EPD, run the following (without the brackets):
 ``` 
-docker login -u <MyUser> https://tlv-harborpd-01.bmc.com
+docker login https://containers.bmc.com -u<USER> -p<TOKEN>
+
+
 ```
 4.	When prompted for a password, paste the key you downloaded in the previous step.
 
@@ -30,7 +32,7 @@ docker login -u <MyUser> https://tlv-harborpd-01.bmc.com
 1.	Ensure that you are logged in to containers.bmc.com
 2. Run:
 ```
-docker pull tlv-harborpd-01.bmc.com/workbench/workbench:9.21.325-GA
+docker pull containers.bmc.com/bmc/workbench:9.21.325-GA
 ```
 - Note: 9.21.220-GA is the tag for the version of the image. </br>To get the latest Workbench version, modify this to the latest version of Automation API. </br>You can find the latest Automation API version here: <a target="_blank" href="https://documents.bmc.com/supportu/API/Monthly/en-US/Documentation/API_Intro.htm">Automation API</a>
 
@@ -40,7 +42,7 @@ docker pull tlv-harborpd-01.bmc.com/workbench/workbench:9.21.325-GA
 
 To start a container, run the following docker command:
 ```
-docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench tlv-harborpd-01.bmc.com/workbench/workbench:9.21.325-GA
+docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench containers.bmc.com/bmc/workbench:9.21.325-GA
 ```
 We recommend explicitly limiting the consumption of memory and CPU on the host. It's recommended to run (adjust memory and CPU parameters according to the limits you wish to set)
 
