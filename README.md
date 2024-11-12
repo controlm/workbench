@@ -23,8 +23,6 @@ In order to get workbench you will need permissions to download Control-M/Enterp
 2. With the user that has permissions to the EPD, run the following (without the brackets):
 ``` 
 docker login https://containers.bmc.com -u<USER> -p<TOKEN>
-
-
 ```
 4.	When prompted for a password, paste the key you downloaded in the previous step.
 
