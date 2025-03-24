@@ -400,6 +400,9 @@ The version of Control-M/EM in the Control-M Workbench is 9.0.21.100
 
 In addition, the Control-M Workbench includes all released [Integrations](https://docs.bmc.com/docs/ctm_integrations/control-m-integrations-home-994589883.html) at the moment of the image's release.
 
+## Known Issues
+Running Control-M Workbench will not work on MacOs. No timeline to resolve this issue at the moment. 
+
 ## Troubleshooting
 
 The Control-M Workbench image is built in a pipeline that performs automatic tests before release. Our image is tested in Linux using Docker version 19.03.4 with 8GB allocated to the container. If you are experiencing issues, check the following:
