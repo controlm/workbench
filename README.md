@@ -16,23 +16,23 @@ In order to get workbench you will need permissions to download Control-M/Enterp
 1.	Connect to EPD: ```https://www.bmc.com/support/resources/product-downloads.html```
 2.	In EPD select “Product download tool”
 3.	Select “Container Products” from the filters
-4.	Click the “Download Container Access Key”, this will download a file that contains the access key to containers.bmc.com
+4.	Select "Control-M/Enterprise Manager" option
+5.	A new window will open, press on "Container Acccess Product" and follow the instructions there.
 
-#### Accessing containers.bmc.com:
+#### Accessing distribution.bmc.com:
 1.	Ensure that you have docker installed and running.
-2. With the user that has permissions to the EPD, run the following (without the brackets):
+2. With the user that has permissions to the EPD and the Identity Token, run the following (without the brackets):
 ``` 
-docker login https://containers.bmc.com -u<USER> -p<TOKEN>
+docker login https://distribution.bmc.com -u<USER> -p<TOKEN>
 ```
-4.	When prompted for a password, paste the key you downloaded in the previous step.
 
 #### Pulling the Workbench Image:
-1.	Ensure that you are logged in to containers.bmc.com
+1.	Ensure that you are logged in to distribution.bmc.com
 2. Run:
 ```
-docker pull containers.bmc.com/bmc/workbench:9.21.340-GA
+docker pull distribution.bmc.com/ctmem/workbench:9.22.50-GA
 ```
-- Note: 9.21.340-GA is the tag for the version of the image. </br>To get the latest Workbench version, modify this to the latest version of Automation API. </br>You can find the latest Automation API version here: <a target="_blank" href="https://documents.bmc.com/supportu/API/Monthly/en-US/Documentation/API_Intro.htm">Automation API</a>
+- Note: 9.22.50-GA is the tag for the version of the image. </br>To get the latest Workbench version, modify this to the latest version of Automation API. </br>You can find the latest Automation API version here: <a target="_blank" href="https://documents.bmc.com/supportu/API/Monthly/en-US/Documentation/API_Intro.htm">Automation API</a>
 
 
 ### Get the Workbench image
@@ -40,7 +40,7 @@ docker pull containers.bmc.com/bmc/workbench:9.21.340-GA
 
 To start a container, run the following docker command:
 ```
-docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench containers.bmc.com/bmc/workbench:9.21.340-GA
+docker run -dt --cpus=4 -m 8g -p 8443:8443 --hostname=workbench distribution.bmc.com/ctmem/workbench:9.22.50-GA
 ```
 We recommend explicitly limiting the consumption of memory and CPU on the host. It's recommended to run (adjust memory and CPU parameters according to the limits you wish to set)
 
@@ -396,7 +396,7 @@ docker run \
 
 Control-M Workbench is released every month at the same time as Control-M Automation API. The image contains the latest Control-M Automation API version and is versioned according to the Automation API. 
 
-The version of Control-M/EM in the Control-M Workbench is 9.0.21.100
+The version of Control-M/EM in the Control-M Workbench is 9.0.22.000
 
 In addition, the Control-M Workbench includes all released [Integrations](https://docs.bmc.com/docs/ctm_integrations/control-m-integrations-home-994589883.html) at the moment of the image's release.
 
